@@ -141,7 +141,7 @@ form {
   border: none;
   caret-color: var(--light-grayish-blue);
   color: var(--dark-mode-light-gray);
-  width: 63%;
+  width: 230px;
   border-radius: 5px;
 }
 
@@ -356,7 +356,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .filters-container {
-  width: 93%;
+  width: 94%;
   display: flex;
   justify-content: center;
   gap: 20px;
