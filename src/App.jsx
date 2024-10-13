@@ -64,8 +64,12 @@ function App() {
       name,
       completed: false,
     };
-    const taskList = [...tasks, newTask];
-    setTasks(taskList);
+    if (newTask.name.trim() === "") {
+      alert("Please, write a new task");
+    } else {
+      const taskList = [...tasks, newTask];
+      setTasks(taskList);
+    }
   };
 
   /* Mark tasks as complete */
