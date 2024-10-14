@@ -11,12 +11,13 @@ const TaskInput = ({ addTask }) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Evita que el formulario se envíe y la página se recargue
+    e.preventDefault();
     if (name.trim()) {
       addTask(name);
       setName("");
     }
   };
+
   return (
     <form className="new-task-form" onSubmit={handleSubmit}>
       <span className="new-task-icon"></span>
